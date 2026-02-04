@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with Next.js 14, Tailwind CSS, and Framer Motion. Features a dark theme, smooth animations, and a professional layout.
 
-## 🚀 Features
+##  Features
 
 - **Modern Design**: Dark theme with minimal professional layout
 - **Smooth Animations**: Framer Motion powered animations throughout
@@ -11,7 +11,7 @@ A modern, responsive portfolio website built with Next.js 14, Tailwind CSS, and 
 - **Fast Performance**: Next.js 14 with App Router for optimal performance
 - **Smooth Scrolling**: Native smooth scroll behavior between sections
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Framework**: Next.js 14 (App Router)
 - **Styling**: Tailwind CSS
@@ -19,7 +19,7 @@ A modern, responsive portfolio website built with Next.js 14, Tailwind CSS, and 
 - **Icons**: Lucide React
 - **Language**: TypeScript
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repository:
 ```bash
@@ -39,7 +39,7 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## 🚢 Deployment to Vercel
+##  Deployment to Vercel
 
 ### Option 1: Deploy via Vercel Dashboard
 
@@ -72,7 +72,7 @@ vercel
 vercel --prod
 ```
 
-## 📝 Build for Production
+##  Build for Production
 
 To create an optimized production build:
 
@@ -81,7 +81,7 @@ npm run build
 npm start
 ```
 
-## 🎨 Customization
+##  Customization
 
 ### Update Personal Information
 
@@ -101,7 +101,7 @@ Edit the following files to update your information:
 - Tailwind config: `tailwind.config.ts`
 - Component-specific styles are inline with Tailwind classes
 
-## 📱 Sections
+##  Sections
 
 1. **Hero**: Introduction with animated tech icons orbit
 2. **About**: Personal bio and education
@@ -110,7 +110,7 @@ Edit the following files to update your information:
 5. **Certifications**: List of certifications
 6. **Contact**: Contact information and social links
 
-## 🔧 Project Structure
+##  Project Structure
 
 ```
 Website/
@@ -134,11 +134,11 @@ Website/
 └── README.md
 ```
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
-## 🤝 Contributing
+##  Contributing
 
 Feel free to fork this project and customize it for your own portfolio!
 
