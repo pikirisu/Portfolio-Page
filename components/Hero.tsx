@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const techIcons = [
-  { name: "Python", icon: "🐍" },
-  { name: "TensorFlow", icon: "🤖" },
-  { name: "PyTorch", icon: "🔥" },
-  { name: "React", icon: "⚛️" },
-  { name: "Next.js", icon: "▲" },
-  { name: "ML", icon: "🧠" },
+  { name: "C++", icon: "⚡" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "Express", icon: "🚂" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "Git", icon: "📦" },
+  { name: "DSA", icon: "🧩" },
 ];
 
 export default function Hero() {
@@ -73,7 +73,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Software Engineer | ML & AI Enthusiast
+            Final-Year CSE Student · Backend Developer · Problem Solver
           </motion.p>
 
           <motion.p
@@ -82,7 +82,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Building scalable systems and intelligent ML solutions, one project at a time.
+            Building backend applications and sharpening computer science fundamentals through consistent practice.
           </motion.p>
 
           <motion.div

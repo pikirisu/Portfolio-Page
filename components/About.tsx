@@ -26,23 +26,34 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              I'm a passionate Software Engineer and ML & AI enthusiast currently pursuing my B.Tech in Computer Science with a specialization in Data Science & Analytics at IIIT Nagpur.
+              I'm a final-year Computer Science student at IIIT Nagpur, focused on software engineering and backend development. I'm building strong foundations in data structures, algorithms, and core CS subjects while applying what I learn through hands-on projects.
             </motion.p>
             <motion.p
-              className="text-lg text-gray-400 leading-relaxed mb-6"
+              className="text-lg text-gray-400 leading-relaxed mb-4"
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              My focus lies in building scalable systems and developing intelligent machine learning solutions. I enjoy working on end-to-end ML projects, from data preprocessing to model deployment, and I'm constantly learning and exploring new technologies in the AI space.
+              I care about understanding how systems work — from memory and processes to databases, networks, and API design.
             </motion.p>
+            <motion.ul
+              className="text-lg text-gray-400 leading-relaxed mb-6 space-y-2 list-disc list-inside"
+              initial={{ opacity: 0, x: -20 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+            >
+              <li>Solved 150+ DSA problems across platforms like LeetCode and NeetCode</li>
+              <li>Built REST APIs with Node.js, Express, MongoDB, and JWT authentication</li>
+              <li>Published 20+ YouTube videos explaining DSA problems step by step</li>
+              <li>Studying Operating Systems, DBMS, Computer Networks, and GATE CSE topics</li>
+            </motion.ul>
             <motion.p
               className="text-lg text-gray-400 leading-relaxed"
               initial={{ opacity: 0, x: -20 }}
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.6, duration: 0.8 }}
             >
-              When I'm not coding, I'm diving deep into the latest research papers, experimenting with new ML frameworks, or contributing to open-source projects.
+              My goal is to become a strong software engineer with solid fundamentals — not shortcuts.
             </motion.p>
           </div>
 
@@ -58,20 +69,18 @@ export default function About() {
                 <h4 className="text-xl font-medium text-white mb-2">
                   Indian Institute of Information Technology Nagpur
                 </h4>
-                <p className="text-gray-400 mb-1">B.Tech Computer Science (Data Science & Analytics)</p>
-                <p className="text-sm text-gray-500">Aug 2023 – Jul 2027</p>
+                <p className="text-gray-400 mb-1">B.Tech Computer Science and Engineering</p>
+                <p className="text-sm text-gray-500">Final Year · Aug 2023 – Jul 2027</p>
               </div>
               <div className="mt-6">
                 <h5 className="text-lg font-medium text-white mb-3">Relevant Coursework</h5>
                 <div className="flex flex-wrap gap-2">
                   {[
                     "Operating Systems",
-                    "Data Structures",
-                    "AI",
-                    "ML",
-                    "Networking",
-                    "Databases",
-                    "Computer Vision",
+                    "Data Structures and Algorithms",
+                    "Computer Organization and Architecture",
+                    "Computer Networks",
+                    "Database Management Systems",
                   ].map((course, index) => (
                     <motion.span
                       key={course}

@@ -7,19 +7,19 @@ import { useRef } from "react";
 const skillCategories = [
   {
     title: "Languages",
-    skills: ["Python", "C++"],
+    skills: ["C++", "JavaScript", "Python"],
   },
   {
-    title: "ML",
-    skills: ["Supervised Learning", "ANN", "RNN", "Feature Engineering"],
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication"],
   },
   {
-    title: "Frameworks",
-    skills: ["TensorFlow", "PyTorch", "Scikit-Learn"],
+    title: "CS Fundamentals",
+    skills: ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Computer Networks"],
   },
   {
     title: "Tools",
-    skills: ["Streamlit", "Flask (basic)", "GitHub", "Jupyter"],
+    skills: ["Git", "GitHub", "Postman", "VS Code", "Linux"],
   },
 ];
 

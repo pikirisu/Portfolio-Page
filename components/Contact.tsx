@@ -40,7 +40,7 @@ export default function Contact() {
       >
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-center">Get In Touch</h2>
         <p className="text-gray-400 text-center mb-12 text-lg">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          Open to software engineering internships, backend development opportunities, and technical discussions. Feel free to reach out.
         </p>
 
         <div className="grid sm:grid-cols-3 gap-6">

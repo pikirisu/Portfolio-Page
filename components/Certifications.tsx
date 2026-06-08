@@ -7,16 +7,16 @@ import { CheckCircle2 } from "lucide-react";
 
 const certifications = [
   {
-    title: "Complete Data Science, Machine Learning, Deep Learning, NLP Bootcamp",
+    title: "DSA in C++",
+    instructor: "Love Babbar",
+    platform: "YouTube",
+    status: "in-progress",
+  },
+  {
+    title: "Data Science & Machine Learning Bootcamp",
     instructor: "Krish Naik",
     platform: "Udemy",
     status: "completed",
-  },
-  {
-    title: "DSA in C++",
-    instructor: "Love Babbar",
-    platform: "In Progress",
-    status: "in-progress",
   },
 ];
 

@@ -7,22 +7,25 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Customer Churn Prediction using ANN",
-    description: "ANN churn prediction on 10,000 customers with feature engineering and binary classification pipeline. Extended with salary regression capabilities.",
-    tech: ["Python", "NumPy", "Pandas", "Scikit-Learn", "TensorFlow/Keras"],
-    github: "https://github.com/pikirisu",
+    title: "NeetCode DSA Submissions",
+    description:
+      "Collection of algorithm solutions in C++, organized by topic. Focus on clean implementations, time/space trade-offs, and revisiting problems to improve approach.",
+    tech: ["C++", "DSA", "Problem Solving"],
+    github: "https://github.com/pikirisu/neetcode-submissions",
   },
   {
-    title: "ML Hallucination Detection",
-    description: "Trained on 145k+ samples with feature pipelines containing 385 dimensions. Built reusable model artifacts for hallucination detection in ML outputs.",
-    tech: ["Python", "NLP", "PyTorch", "Transformers", "XGBoost"],
-    github: "https://github.com/pikirisu",
+    title: "Portfolio Website",
+    description:
+      "Responsive personal site built with Next.js and TypeScript. Component-based structure, smooth scroll navigation, and Framer Motion animations — deployed on Vercel.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/pikirisu/portfolio-page-pikirisu",
   },
   {
-    title: "Sentiment Analysis using RNN",
-    description: "IMDB dataset (25k train/test) with vocabulary size 10,000, padded to 500 tokens. Binary classification pipeline for sentiment analysis.",
-    tech: ["TensorFlow/Keras", "NLP"],
-    github: "https://github.com/pikirisu",
+    title: "Customer Churn Prediction Pipeline",
+    description:
+      "End-to-end data pipeline: CSV ingestion, feature encoding, train/test split, and model training workflow. Practiced structuring a reproducible ML pipeline rather than optimizing accuracy.",
+    tech: ["Python", "Pandas", "Scikit-Learn", "TensorFlow"],
+    github: "https://github.com/pikirisu/Customer-Churn-Analytics-Retention-Insights",
   },
 ];
 
