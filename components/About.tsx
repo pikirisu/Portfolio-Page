@@ -26,7 +26,7 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.2, duration: 0.8 }}
             >
-              I'm a final-year Computer Science student at IIIT Nagpur, focused on software engineering and backend development. I'm building strong foundations in data structures, algorithms, and core CS subjects while applying what I learn through hands-on projects.
+              I'm a Computer Science student at IIIT Nagpur, focused on full-stack software engineering with a growing specialization in AI integration. I build and deploy production applications end-to-end while applying strong data structures, algorithms, and core CS fundamentals.
             </motion.p>
             <motion.p
               className="text-lg text-gray-400 leading-relaxed mb-4"
@@ -34,7 +34,7 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.4, duration: 0.8 }}
             >
-              I care about understanding how systems work — from memory and processes to databases, networks, and API design.
+              I care about understanding how systems work — from memory and processes to databases, networks, and API design — and how to wire LLMs into real products responsibly and cost-effectively.
             </motion.p>
             <motion.ul
               className="text-lg text-gray-400 leading-relaxed mb-6 space-y-2 list-disc list-inside"
@@ -42,10 +42,13 @@ export default function About() {
               animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
               transition={{ delay: 0.5, duration: 0.8 }}
             >
-              <li>Solved 150+ DSA problems across platforms like LeetCode and NeetCode</li>
-              <li>Built REST APIs with Node.js, Express, MongoDB, and JWT authentication</li>
-              <li>Published 20+ YouTube videos explaining DSA problems step by step</li>
-              <li>Studying Operating Systems, DBMS, Computer Networks, and GATE CSE topics</li>
+              <li>
+                Solved 300+ DSA problems across LeetCode, NeetCode, GeeksforGeeks, and
+                HackerRank &mdash; trees, graphs, recursion, and dynamic programming
+              </li>
+              <li>Built and deployed full-stack AI platforms integrating OpenAI and Gemini through a unified LLM layer</li>
+              <li>Designed REST APIs with JWT authentication, role-based access control, and MongoDB aggregation pipelines</li>
+              <li>Published 30+ YouTube videos explaining DSA problems and programming concepts step by step</li>
             </motion.ul>
             <motion.p
               className="text-lg text-gray-400 leading-relaxed"
@@ -69,8 +72,16 @@ export default function About() {
                 <h4 className="text-xl font-medium text-white mb-2">
                   Indian Institute of Information Technology Nagpur
                 </h4>
-                <p className="text-gray-400 mb-1">B.Tech Computer Science and Engineering</p>
-                <p className="text-sm text-gray-500">Final Year · Aug 2023 – Jul 2027</p>
+                <p className="text-gray-400 mb-1">B.Tech Computer Science (Data Science and Analytics)</p>
+                <p className="text-sm text-gray-500 mb-1">Final Year · Aug 2023 – Jul 2027</p>
+                <p className="text-sm text-gray-500">8.98/10 SGPA · 6th Semester</p>
+              </div>
+              <div className="pt-4 border-t border-gray-800">
+                <h4 className="text-lg font-medium text-white mb-2">
+                  St. Xavier&apos;s High School, Nagpur
+                </h4>
+                <p className="text-gray-400 mb-1">Central Board of Secondary Education (CBSE)</p>
+                <p className="text-sm text-gray-500">96% in Class X · 2022</p>
               </div>
               <div className="mt-6">
                 <h5 className="text-lg font-medium text-white mb-3">Relevant Coursework</h5>

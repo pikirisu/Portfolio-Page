@@ -11,15 +11,23 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication"],
+    skills: ["Node.js", "Express", "MongoDB", "Mongoose", "Flask", "FastAPI", "SQL"],
+  },
+  {
+    title: "Frontend",
+    skills: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+  },
+  {
+    title: "AI Integration",
+    skills: ["OpenAI API", "Google Gemini API", "LLM Text Analysis", "Structured JSON Processing"],
   },
   {
     title: "CS Fundamentals",
-    skills: ["Data Structures & Algorithms", "Operating Systems", "DBMS", "Computer Networks"],
+    skills: ["Data Structures & Algorithms", "Object-Oriented Programming", "Time & Space Complexity"],
   },
   {
     title: "Tools",
-    skills: ["Git", "GitHub", "Postman", "VS Code", "Linux"],
+    skills: ["Git", "GitHub", "Docker", "Postman", "GitHub Actions", "Vercel", "Render"],
   },
 ];
 
@@ -37,7 +45,7 @@ export default function Skills() {
       >
         <h2 className="text-4xl sm:text-5xl font-bold mb-12 text-center">Skills</h2>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}

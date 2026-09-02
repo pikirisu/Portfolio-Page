@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { Mail, Github, Linkedin, Send, FileDown } from "lucide-react";
 
 const contactLinks = [
   {
@@ -74,7 +74,7 @@ export default function Contact() {
         </div>
 
         <motion.div
-          className="mt-12 text-center"
+          className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4"
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
@@ -87,6 +87,17 @@ export default function Contact() {
           >
             <Send size={20} />
             Send Message
+          </motion.a>
+          <motion.a
+            href="/Resume_Akshat_Chaurasia.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 border border-gray-600 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FileDown size={20} />
+            Download Résumé
           </motion.a>
         </motion.div>
       </motion.div>

@@ -2,14 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, FileDown } from "lucide-react";
 
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
-  { name: "Certifications", href: "#certifications" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -58,6 +57,17 @@ export default function Navigation() {
                 {item.name}
               </motion.a>
             ))}
+            <motion.a
+              href="/Resume_Akshat_Chaurasia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-1.5 border border-gray-700 rounded-lg text-gray-200 hover:bg-gray-800 hover:text-white transition-colors text-sm font-medium"
+              whileHover={{ y: -2 }}
+              whileTap={{ y: 0 }}
+            >
+              <FileDown size={16} />
+              Résumé
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -89,6 +99,16 @@ export default function Navigation() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="/Resume_Akshat_Chaurasia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <FileDown size={16} />
+              Résumé
+            </a>
           </div>
         </motion.div>
       )}

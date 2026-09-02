@@ -1,15 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileDown } from "lucide-react";
 
 const techIcons = [
-  { name: "C++", icon: "⚡" },
+  { name: "React", icon: "⚛️" },
   { name: "Node.js", icon: "🟢" },
-  { name: "Express", icon: "🚂" },
+  { name: "TypeScript", icon: "🔷" },
   { name: "MongoDB", icon: "🍃" },
-  { name: "Git", icon: "📦" },
-  { name: "DSA", icon: "🧩" },
+  { name: "OpenAI", icon: "🤖" },
+  { name: "C++", icon: "⚡" },
 ];
 
 export default function Hero() {
@@ -19,7 +19,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-transparent" />
       
       {/* Orbit Animation */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div
+        className="absolute inset-0 flex items-center justify-center [--orbit-radius:110px] sm:[--orbit-radius:150px] lg:[--orbit-radius:230px]"
+        aria-hidden="true"
+      >
         <motion.div
           className="relative w-0 h-0"
           animate={{ rotate: 360 }}
@@ -36,7 +39,7 @@ export default function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay, duration: 0.5 }}
                 style={{
-                  transform: `rotate(${angle}deg) translateX(150px) rotate(-${angle}deg)`,
+                  transform: `rotate(${angle}deg) translateX(var(--orbit-radius)) rotate(-${angle}deg)`,
                 }}
               >
                 <motion.div
@@ -73,7 +76,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Final-Year CSE Student · Backend Developer · Problem Solver
+            Full-Stack Developer · AI Integration · Problem Solver
           </motion.p>
 
           <motion.p
@@ -82,7 +85,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Building backend applications and sharpening computer science fundamentals through consistent practice.
+            Building and deploying full-stack AI-powered platforms with React, Node.js, and LLM integrations — backed by strong backend engineering and CS fundamentals.
           </motion.p>
 
           <motion.div
@@ -106,6 +109,17 @@ export default function Hero() {
               whileTap={{ scale: 0.95 }}
             >
               Get In Touch
+            </motion.a>
+            <motion.a
+              href="/Resume_Akshat_Chaurasia.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 border border-gray-600 text-white rounded-lg font-semibold hover:bg-gray-800 transition-colors flex items-center gap-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <FileDown size={18} />
+              Résumé
             </motion.a>
           </motion.div>
 

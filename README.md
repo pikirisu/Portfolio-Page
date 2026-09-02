@@ -91,7 +91,6 @@ Edit the following files to update your information:
 - **About Section**: `components/About.tsx` - Update bio and education details
 - **Projects**: `components/Projects.tsx` - Update project details and GitHub links
 - **Skills**: `components/Skills.tsx` - Update skill categories
-- **Certifications**: `components/Certifications.tsx` - Update certifications
 - **Contact**: `components/Contact.tsx` - Update contact information
 - **Metadata**: `app/layout.tsx` - Update SEO metadata
 
@@ -103,12 +102,12 @@ Edit the following files to update your information:
 
 ##  Sections
 
-1. **Hero**: Introduction with animated tech icons orbit
-2. **About**: Personal bio and education
-3. **Projects**: Project cards with tech stacks and GitHub links
-4. **Skills**: Skills organized by categories
-5. **Certifications**: List of certifications
-6. **Contact**: Contact information and social links
+1. **Hero**: Introduction with animated tech icons orbit and résumé download
+2. **About**: Personal bio, education, and linked achievements
+3. **Problem Solving & Content**: DSA and YouTube highlights, each linked to its source
+4. **Projects**: Project cards with tech stacks, GitHub, and live links
+5. **Skills**: Skills organized by categories
+6. **Contact**: Contact information, social links, and résumé download
 
 ##  Project Structure
 
@@ -116,17 +115,19 @@ Edit the following files to update your information:
 Website/
 ├── app/
 │   ├── globals.css
+│   ├── icon.svg
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components/
 │   ├── About.tsx
-│   ├── Certifications.tsx
 │   ├── Contact.tsx
 │   ├── Hero.tsx
+│   ├── Highlights.tsx
 │   ├── Navigation.tsx
 │   ├── Projects.tsx
 │   └── Skills.tsx
 ├── public/
+│   └── Resume_Akshat_Chaurasia.pdf
 ├── package.json
 ├── tsconfig.json
 ├── tailwind.config.ts

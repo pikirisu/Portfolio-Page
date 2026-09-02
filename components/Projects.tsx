@@ -7,25 +7,26 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "NeetCode DSA Submissions",
+    title: "Inter Coach",
     description:
-      "Collection of algorithm solutions in C++, organized by topic. Focus on clean implementations, time/space trade-offs, and revisiting problems to improve approach.",
-    tech: ["C++", "DSA", "Problem Solving"],
-    github: "https://github.com/pikirisu/neetcode-submissions",
+      "Full-stack AI resume platform with 21 REST APIs for resume analysis, JD extraction, and resume–JD matching. Deterministic 70/30 weighted scoring reduces LLM usage to extraction and recommendations, with OpenAI and Gemini unified through one LLM layer at under $0.20 measured AI cost per resume.",
+    tech: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "OpenAI", "Gemini"],
+    github: "https://github.com/pikirisu/InterCoach",
+    live: "https://inter-coach.vercel.app",
   },
   {
-    title: "Portfolio Website",
+    title: "Project Camp",
     description:
-      "Responsive personal site built with Next.js and TypeScript. Component-based structure, smooth scroll navigation, and Framer Motion animations — deployed on Vercel.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/pikirisu/portfolio-page-pikirisu",
+      "34-route project management REST API supporting projects, members, tasks, subtasks, notes, and file attachments. Role-based authorization across 26 protected routes with 3 permission levels, plus MongoDB aggregation pipelines for live member counts and nested task/subtask data.",
+    tech: ["Node.js", "Express", "MongoDB", "Mongoose", "JWT", "RBAC"],
+    github: "https://github.com/pikirisu/Projects-Management-System",
   },
   {
-    title: "Customer Churn Prediction Pipeline",
+    title: "TCP Server in JS",
     description:
-      "End-to-end data pipeline: CSV ingestion, feature encoding, train/test split, and model training workflow. Practiced structuring a reproducible ML pipeline rather than optimizing accuracy.",
-    tech: ["Python", "Pandas", "Scikit-Learn", "TensorFlow"],
-    github: "https://github.com/pikirisu/Customer-Churn-Analytics-Retention-Insights",
+      "HTTP/1.1 server framework built in Node.js on raw TCP sockets — request parsing, routing, middleware chaining, and response handling without Node's built-in http module. Sustained ~4,800 req/sec at 50 concurrent connections with 0 errors, backed by 20 automated tests.",
+    tech: ["Node.js", "TCP/IP", "HTTP/1.1"],
+    github: "https://github.com/pikirisu/TCP-Server-in-JS-",
   },
 ];
 
@@ -71,16 +72,30 @@ export default function Projects() {
                 ))}
               </div>
 
-              <motion.a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
-                whileHover={{ x: 5 }}
-              >
-                <Github size={18} />
-                View on GitHub
-              </motion.a>
+              <div className="flex items-center gap-4">
+                <motion.a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
+                  whileHover={{ x: 5 }}
+                >
+                  <Github size={18} />
+                  GitHub
+                </motion.a>
+                {project.live && (
+                  <motion.a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium"
+                    whileHover={{ x: 5 }}
+                  >
+                    <ExternalLink size={18} />
+                    Live
+                  </motion.a>
+                )}
+              </div>
             </motion.div>
           ))}
         </div>
